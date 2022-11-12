@@ -8,6 +8,10 @@ export function mult(a: number, b: number) {
 
 
 export function splitInterWords(sentense: string) {
-    return sentense.toLowerCase().split(" ").filter(w => w=== "")
-        .map(w => w.replace("!", ""))
+    const words = sentense.toLowerCase().split(" ")
+       return words.filter(w => w !== "" && w !== "-")
+        .map(w => w
+            .replace("!", "")
+            .replace(".", "")
+            .replace(",", ""))
 }
