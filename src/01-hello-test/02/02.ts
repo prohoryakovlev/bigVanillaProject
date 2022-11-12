@@ -1,12 +1,12 @@
 
-type CicyType = {
+type CityType = {
     tutle: string
     countryTitle: string
 }
 
 type AddressType = {
     streetTitle: string
-    city: CicyType
+    city: CityType
 }
 
 type TechType ={
