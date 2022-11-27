@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {splitInterWords} from './01-hello-test/01';
+import {splitInterWords, sum} from './01-hello-test/01';
 
 const sentense = "Hello my friends"
 const result = splitInterWords(sentense)
@@ -14,6 +14,7 @@ console.log(result[0] == "hello")
 console.log(result[1] == "my")
 console.log(result[2] == "friend")
 
+var a = sum;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
