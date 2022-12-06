@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {splitInterWords, sum} from './01-hello-test/01';
+import User from "./01-hello-test/05/06-collbacks";
 
 const sentense = "Hello my friends"
 const result = splitInterWords(sentense)
@@ -23,7 +24,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App />
+    <User />
   </React.StrictMode>
 );
 
