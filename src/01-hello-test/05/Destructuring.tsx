@@ -15,9 +15,11 @@ export type ManType = {
 type PropsType = {
     title: string
     man: ManType
+    food: Array<string>
+    car: {model: string}
 }
 
-export const ManComponent: React.FC<PropsType> = ({title, man}) => {
+export const ManComponent: React.FC<PropsType> = ({title, man, ...props}) => {
 
 
     return (
