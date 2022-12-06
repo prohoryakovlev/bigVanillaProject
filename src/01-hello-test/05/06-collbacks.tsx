@@ -1,4 +1,4 @@
-
+import React, {MouseEvent} from 'react'
 
 const callback = () => {
     alert("hey")
@@ -9,19 +9,26 @@ window.setTimeout(callback, 1000)
 
 export const User = () => {
 
-    const deleteUser =()=>{
-        alert("user should be deleted")
+    const deleteUser = (event: MouseEvent<HTMLButtonElement>) => {
+        alert(       event.currentTarget.name)
     }
 
-    const saveUser =()=>{
-        alert("user have been saved")
+    const onNameChange = () => {
+        console.log("name changed")
+    }
 
+    const focusLostHandler = () => {
+        console.log("focus lost")
     }
     return (
         <div>
-            Prohor
-            <button onClick={deleteUser}>delete</button>
-            <button onClick={saveUser}>save</button>
+                <textarea
+                    onChange={onNameChange}
+                    onBlur={focusLostHandler}
+                >Prohor
+                </textarea>
+            <input/>
+            <button name="delete" onClick={deleteUser}>delete</button>
         </div>
     )
 }
