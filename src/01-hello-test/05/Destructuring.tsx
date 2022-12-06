@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 export type ManType = {
     name: string
@@ -16,11 +16,16 @@ type PropsType = {
     title: string
     man: ManType
     food: Array<string>
-    car: {model: string}
+    car: { model: string }
+}
+
+function useProhorState(m: string) {
+    return [m, function (){}]
 }
 
 export const ManComponent: React.FC<PropsType> = ({title, man, ...props}) => {
 
+    const [message, setMessage] = useState("hello")
 
     return (
         <div>

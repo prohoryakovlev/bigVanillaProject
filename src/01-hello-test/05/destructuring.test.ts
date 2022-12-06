@@ -14,7 +14,7 @@ beforeEach(() => {
         }
     }
 })
-
+//
 test('', () => {
 
 
@@ -25,7 +25,7 @@ test('', () => {
 
 
     expect(age).toBe(25)
-    expect(lessons.length).toBe(2)
+    expect(lessons.length).toBe(3)
 
 
     expect(title).toBe("Nezavisimosti street")
@@ -33,7 +33,19 @@ test('', () => {
 
 })
 
-test('', () => {
-
-
-})
+// test('', () => {
+//     const l1 = props.lessons[0]
+//     const l2 = props.lessons[1]
+//
+//     const [ls1,...restLesson] = props.lessons
+//
+//     expect(l1.title).toBe('1')
+//     expect(l2.title).toBe('2')
+//
+//     // expect(l2.title).toBe('2')
+//     expect(l1.title).toBe('1')
+//
+//     expect(restLesson.length).toBe(2)
+//     expect(restLesson[0].title).toBe('2')
+//
+// })
